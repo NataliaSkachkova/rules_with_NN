@@ -163,6 +163,7 @@ def main():
     print("Estimating PPL with RNNs. Finding optimal parameters:")
     plot_RNN_ppl()
     print("Best RNN model: text size=131,072, hidden layer size=16, bptt=4, number of classes = 101.")
+    print("Best perplexity results on test data: 1.129591.")
     #print("Probabilities of separate words (brackets) based on the RNN model with these parameters:")
     ro, rc, eos = read_prob("data/test.ppl.result.10000.2sents.debug.txt")
     plot_probs(ro, rc, eos)
